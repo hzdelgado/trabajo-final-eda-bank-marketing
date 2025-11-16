@@ -28,19 +28,17 @@ El análisis se enfoca en responder las siguientes preguntas de negocio:
 
 ---
 
-## 🚀 Cómo Ejecutar el Análisis
+## 📋 Requisitos
 
 Para replicar el análisis y generar los reportes, sigue estos pasos:
 
-### 1. Requisitos
-
-- **Crear el entorno virtual (solo la primera vez)**
+### 1. Crear el entorno virtual (solo la primera vez) 
 
 ```
 python -m venv pr-venv
 ```
 
-## Instalación y entorno virtual
+### 2. Activar entorno virtual
 
 - Windows CMD:
 ```cmd
@@ -57,17 +55,18 @@ pr-venv\Scripts\activate
 source pr-venv/bin/activate
 ```
 
-## Instalar dependencias
+### 3. Instalar dependencias
 
 ```
 pip install -r requirements.txt
 ```
+---
 
-### 2. Ejecución
+## 🚀 Ejecución
 
-El script main.py está diseñado para ejecutar todo el flujo de trabajo automáticamente:
+El script `main.py` está diseñado para ejecutar todo el flujo de trabajo automáticamente:
 
 ```bash
 python main.py
 ```
-Al finalizar, se generarán tres visualizaciones (Histograma de Edad, Barras de Duración, Heatmap de Variabilidad) y se actualizarán los archivos CSV de salida dentro de la carpeta data/processed/.
+Al finalizar, se generarán tres visualizaciones (Histograma de Edad, Barras de Duración, Heatmap de Variabilidad) y se actualizarán los archivos CSV de salida dentro de la carpeta `data/processed/`.
